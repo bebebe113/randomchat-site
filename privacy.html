@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | Random Chat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site"><div>
+  <a class="brand" href="./">Random Chat</a>
+  <a class="nav" href="privacy.html">プライバシーポリシー</a>
+  <a class="nav" href="terms.html">利用規約</a>
+  <a class="nav" href="support.html">サポート</a>
+</div></header>
+<main>
+
+<h1>プライバシーポリシー</h1>
+<p class="meta">施行日: 2026年11月22日 ／ 運営者: Yusuke Ayabe(綾部 佑亮、個人)</p>
+
+<p>このプライバシーポリシーは、iOSアプリ「Random Chat」(以下「本アプリ」)で、どのような情報を、何のために、どのように扱うかを説明するものです。本アプリは、見知らぬ相手と匿名でテキストチャットをするアプリです。メールアドレスや電話番号の登録は必要なく、運営者は利用者の氏名や連絡先を取得しません。</p>
+
+<div class="card">
+<strong>ポイント</strong>
+<ul>
+<li>メッセージは端末間で暗号化されます。運営者もAppleも、内容を読むことはできません。</li>
+<li>広告・アクセス解析・第三者のSDKは使いません。利用者の追跡(トラッキング)は行いません。</li>
+<li>運営者が内容を確認できるのは、<strong>利用者が通報したメッセージだけ</strong>です。</li>
+</ul>
+</div>
+
+<h2>1. 扱う情報と目的</h2>
+<table>
+<tr><th>匿名ユーザーID</th><td>iCloudにサインインすると、本アプリ専用に自動で割り当てられる識別子(CloudKitのユーザーID)です。Apple ID・氏名・メールアドレスは、運営者にも他の利用者にも伝わりません。<br>目的: 相手とのマッチング、通報・ブロック・利用停止の管理。</td></tr>
+<tr><th>プロフィール<br>(アイコン・表示名)</th><td>端末内に保存し、チャット中の相手にだけ、暗号化して送ります。運営者は内容を読めません。表示名の入力は任意です。<br>目的: チャット相手に自分を伝えるため。</td></tr>
+<tr><th>メッセージ</th><td>端末間で暗号化(Curve25519の鍵交換とChaChaPolyによる暗号化)して送受信します。復号に必要な鍵は端末(Keychain)にだけあります。<br>チャットを終了すると、自分が送ったメッセージはサーバーから削除されます。通信状況などで削除できなかった分は、運営者が定期的に削除します。<br>目的: チャットの提供。</td></tr>
+<tr><th>マッチング用の一時的な情報</th><td>待機中であることを示す記録、チャットの部屋の記録、鍵交換用の一時的な公開鍵、在室を確認するための更新時刻です。チャットを終了すると削除されます。<br>目的: マッチングと、相手の退出の検知。</td></tr>
+<tr><th>通報の情報</th><td>メッセージを通報したときに限り、「通報されたメッセージの本文」「通報の理由」「通報した人と通報された人の匿名ID」「部屋のID」を、運営者が確認できる形で保存します。作成できるのは利用者、読めるのは運営者だけです。<br>目的: 不適切な利用の確認と、利用停止などの対応。</td></tr>
+<tr><th>ブロックの情報</th><td>ブロックした相手の匿名IDを、本人だけが読める形で保存します。<br>目的: ブロックした相手と二度とマッチングしないため。</td></tr>
+<tr><th>利用停止の情報</th><td>利用停止にしたアカウントの匿名IDと、通報の件数を保存します。<br>目的: 利用停止の適用。</td></tr>
+<tr><th>端末内に保存する情報</th><td>プロフィール、利用規約への同意の記録、進行中のチャットを再起動後も続けるための情報(暗号鍵を含む。Keychainに保存)。チャットを終了すると、そのチャットの情報は削除されます。</td></tr>
+</table>
+
+<h2>2. 取得しない情報</h2>
+<p>氏名、メールアドレス、電話番号、住所、位置情報、連絡先、写真、広告用ID(IDFA)、端末の識別情報は取得しません。広告の配信、アクセス解析、第三者のSDKの利用はありません。通知の許可も求めません(新着の確認のために、Appleが提供する目に見えない通知を使います)。</p>
+
+<h2>3. 第三者への提供・委託</h2>
+<p>本アプリのデータは、Appleのクラウドサービス(iCloud / CloudKit)に保存・処理されます。Appleでの取り扱いには、<a href="https://www.apple.com/legal/privacy/jp/">Appleのプライバシーポリシー</a>が適用されます。</p>
+<p>運営者は、法令に基づく開示の要請がある場合を除き、取得した情報を第三者に提供しません。</p>
+
+<h2>4. 保存期間</h2>
+<ul>
+<li>メッセージ・マッチング用の情報: チャットの終了まで。終了時に削除します(削除できなかった分は、運営者が定期的に削除します)。</li>
+<li>通報の情報: 確認と対応が終わり、不要になるまで。</li>
+<li>ブロックの情報: 利用者が使い続ける間。</li>
+<li>利用停止の情報: 利用停止を維持する間。</li>
+</ul>
+
+<h2>5. 安全管理</h2>
+<p>メッセージの端末間暗号化、通報データへのアクセス権限の限定(運営者のみ)、利用停止の仕組みなどにより、情報の漏えいや不正な利用を防ぎます。ただし、完全な安全性を保証するものではありません。</p>
+
+<h2>6. 13歳未満の方</h2>
+<p>本アプリは、13歳未満の方はご利用いただけません。13歳未満の方の情報を取得したことが分かった場合は、速やかに削除します。</p>
+
+<h2>7. 利用者の選択と権利</h2>
+<ul>
+<li>チャットを終了すると、自分が送ったメッセージは削除されます。</li>
+<li>相手をブロックすると、その相手と二度とマッチングしません。</li>
+<li>通報の情報などについて、開示・訂正・削除を希望する場合は、お問い合わせ先へご連絡ください。内容を確認のうえ、対応します(ご連絡は公開されるため、個人情報は書かないでください)。</li>
+</ul>
+
+<h2>8. ポリシーの変更</h2>
+<p>必要に応じて、このポリシーを変更します。重要な変更は、本ページまたはアプリ内でお知らせします。</p>
+
+<h2>9. お問い合わせ</h2>
+<p>このポリシーや個人情報の扱いに関するお問い合わせは、<a href="support.html">サポートページ</a>の案内に沿ってご連絡ください。</p>
+
+<section class="lang" lang="en">
+<h1>Privacy Policy (English)</h1>
+<p class="meta">Effective: November 22, 2026 · Operator: Yusuke Ayabe (individual developer)</p>
+<p>Random Chat is an iOS app for anonymous one-to-one text chat with strangers. No email address, phone number or name is collected.</p>
+<ul>
+<li><strong>Identifier:</strong> an app-specific anonymous user ID provided by Apple's CloudKit. The operator and other users never see your Apple ID, name or email.</li>
+<li><strong>Messages:</strong> end-to-end encrypted between the two devices (Curve25519 key agreement and ChaCha20-Poly1305). Keys exist only on devices (Keychain). Neither the operator nor Apple can read them. Your sent messages are deleted when you end a chat.</li>
+<li><strong>Profile:</strong> your animal icon and optional display name are stored on your device and sent only to your chat partner, encrypted.</li>
+<li><strong>Reports:</strong> only when you report a message, the reported message text, your reason, and the anonymous IDs of the reporter and the reported user are stored where only the operator can read them, to moderate abuse.</li>
+<li><strong>Blocks and bans:</strong> stored as anonymous IDs to prevent re-matching and to enforce suspensions.</li>
+<li><strong>Not collected:</strong> name, email, phone, location, contacts, photos, advertising ID. No ads, no analytics, no third-party SDKs, no tracking.</li>
+<li><strong>Third parties:</strong> data is stored and processed by Apple (iCloud / CloudKit) under Apple's privacy policy. The operator does not share data with other third parties except where required by law.</li>
+<li><strong>Children:</strong> the app is not for children under 13.</li>
+<li><strong>Contact / requests:</strong> see the <a href="support.html">Support page</a>.</li>
+</ul>
+</section>
+
+</main>
+<footer>© 2026 Yusuke Ayabe</footer>
+</body>
+</html>
